@@ -165,9 +165,12 @@ sensors:
 
 2. Place a protective barrier between the arm and top base cover.
 
-3. Disable robot drivers by running : ``sudo service robot stop``
+3. Cycle the Run-stop (optional).  This step is needed if the torso calibration previously
+   complained of torso position not being in range.
 
-4. Run torso calibration tool:
+4. Disable robot drivers by running : ``sudo service robot stop``
+
+5. Run torso calibration tool:
 
   * To run calibration : ``rosrun fetch_drivers torso_calibrate calibrate``
   * To verify calibration : ``rosrun fetch_drivers torso_calibrate verify``
